@@ -49,8 +49,7 @@ datastore = {"medical": [
 outfile = open("retail_space.csv", 'w')
 outfile.write("room-number,use,sq-ft,price\n")
 for dict in range(len(datastore['medical'])):
-    outfile.write(str(datastore['medical'][dict]['room-number']),
-                  str(datastore['medical'][dict]['use']),
-                  str(datastore['medical'][dict]['sq-ft']),
-                  str(datastore['medical'][dict]['price']),
-                  sep=",")
+    outfile.write(str(datastore['medical'][dict]['room-number']) + ",")
+    outfile.write(str(datastore['medical'][dict]['use']) + ",")
+    outfile.write(str(datastore['medical'][dict]['sq-ft']) + ",")
+    outfile.write(str(datastore['medical'][dict]['price']) + "\n")

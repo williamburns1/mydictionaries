@@ -64,7 +64,7 @@ def deal_cards(deck, number):
         hand_value += value
 
     # Display the value of the hand.
-    print(hand_value)
+    print('Hand Value:', hand_value)
 
 
 # Call the main function.
